@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- i'm sorry i didn't get permission from progate -->
+    <meta charset="utf-8">
+    <title>study.jquery</title>
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+      footer{
+        border: black;
+        border-top: 1px solid #eee;
+      }
+
+      .card-img-overlay{
+        padding: 0px;
+        top: 25%;
+        /* text-align: center; */
+        font-weight: bold;
+      }
+      .card{
+        margin: auto;
+      }
+
+      #fbtn{
+        top: 60%;
+      }
+
+      .sticky-top{
+        background-color:  rgb(0,30,50,0.8);
+      }
+
+/* 
+      .box h1,p{
+        position: absolute;
+        padding: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <a href="https://prog-8.com" class="navbar-brand text-white">Progate</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="https://prog-8.com" class="nav-link text-white">Progate公式サイト</a></li>
+              <li class="nav-item"><a href="https://twitter.com/progateJP" class="nav-link text-white">Progate公式Twitter</a></li>
+              <li class="nav-item"><a href="https://prog-8/courses" class="nav-link text-white">Progateコース一覧</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- <main> -->
+      <!-- <div class="row"> -->
+        <div class="row">
+          <div class="card">
+            <img class="card-img col-12 d-none d-md-block" src="http://placehold.jp/1200x600.png" alt="">
+            <img class="card-img col-12 d-md-none" src="http://placehold.jp/600x1200.png" alt="">
+            <div class="card-img-overlay  col-12 text-center">
+              <h1 class="text-white">LEARN TO CODE.</h1>
+              <h1 class="text-white">LEARN TO BE CREATIVE.</h1>
+              <p class="text-white">Progateはオンラインプログラミング学習サービスです。</p>
+              <p class="text-white">初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+            </div>
+            
+            <div id="fbtn" class="card-img-overlay col-12 text-center">
+              <button class="btn btn-info btn-lg " >新規登録はこちら</button>
+              <button class="btn btn-primary btn-lg" >Fecebookで登録</button>
+              <button class="btn btn-primary btn-lg" >Twitterで登録</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center"><h3>Learn Where to Get Started!</h3></div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-12 col-lg-3 my-5">
+            <img class="mx-auto d-block img-fluid" src="http://placehold.jp/200x200.png" alt="">
+            <h4 class="text-center"><a href="https://prog-8.com/courses/html">HTML & CSS</a></h4>
+            <p>ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+          </div>
+          <div class="col-sm-12 col-lg-3 my-5">
+            <img class="mx-auto d-block img-fluid" src="http://placehold.jp/200x200.png" alt="">
+            <h4 class="text-center"><a href="https://prog-8.com/courses/jquery">jQuery</a></h4>
+            <p>素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+          </div>
+          <div class="col-sm-12 col-lg-3 my-5">
+            <img class="mx-auto d-block img-fluid" src="http://placehold.jp/200x200.png" alt="">
+            <h4 class="text-center"><a href="https://prog-8.com/courses/ruby">Ruby</a></h4>
+            <p>オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+          </div>
+          <div class="col-sm-12 col-lg-3 my-5">
+            <img class="mx-auto d-block img-fluid" src="http://placehold.jp/200x200.png" alt="">
+            <h4 class="text-center"><a href="https://prog-8.com/courses/php">PHP</a></h4>
+            <p>HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>さぁ、あなたもProgateでプログラミングを学んでみませんか？</h3>
+          </div>
+          <div class="col-12 text-center">
+            <h5>Let's learn to code, learn to be creative!</h5>
+          </div>
+          <div class="mx-auto d-block m-5">
+            <button class="btn btn-info btn-lg">さっそく開発する</button>
+          </div>
+        </div>
+      <!-- </div> -->
+      <!-- </main> -->
+      
+      <footer>
+        <h4>Progate</h4>
+        <p>Learn to code,learn to be creative</p>
+      </footer>
+    </div>
+      <!-- jQuery、Popper.js、Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    </body>
+    </html>
