@@ -1,0 +1,39 @@
+body{
+  color:#333;
+  font-family: verdana,sans-serif;
+  margin:0px;
+}
+
+header{
+  background-color: #efefef;
+  
+}
+/* li{
+  list-style-type: none;
+  margin-right: 10px;
+  font-size: 50px
+} */
+
+/* .main{
+  background-color: skyblue;
+  margin:0;
+}
+
+footer{
+  margin: 300px;
+} */
+
+a{
+  color: black;
+  margin-right: auto;
+}
+
+.wengineer{
+  color: gray;
+  font-size:40px;
+}
+
+.skillm{
+  background-color: skyblue;
+  list-style-type: none;
+}
